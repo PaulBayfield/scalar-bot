@@ -1,0 +1,15 @@
+services:
+  scalar-bot:
+    container_name: scalar-bot
+    build: .
+    restart: unless-stopped
+    volumes:
+      - discord.log:/ScalarBot/discord.log
+    environment:
+      - PYTHONUNBUFFERED=0
+      - TOKEN=${TOKEN}
+      - DISCORD_INVITE_URL=${DISCORD_INVITE_URL}
+      - DISCORD_EMBED_COLOUR=${DISCORD_EMBED_COLOUR}
+      - DISCORD_CHANNEL_GENERAL=${DISCORD_CHANNEL_GENERAL}
+      - DISCORD_CHANNEL_INTRODUCTIONS=${DISCORD_CHANNEL_INTRODUCTIONS}
+      - DISCORD_CHANNEL_SHOWCASE=${DISCORD_CHANNEL_SHOWCASE}
