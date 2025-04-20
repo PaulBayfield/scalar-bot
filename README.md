@@ -9,21 +9,20 @@ Scalar Discord's server official Bot
 # 📖 • Table of contents
 
 - [📄 • Presentation](#--presentation)
-- [📃 • Credits](#--credits)
 - [📝 • License](#--license)
 
 # 📄 • Presentation
 
-This repository contains the source code of the Scalar Bot, the official bot of the Scalar Discord server.
-
-# 📃 • Credits
-
-- [Paul Bayfield](https://github.com/PaulBayfield)
+This repository contains the source code of the Scalar Bot, the official bot of the Scalar Discord server.  
+The bot is designed to enhance the experience of the Scalar community by providing various features and functionalities.  
+The Scalar Bot is publicly available, meaning it can be used in Direct Messages, Private Groups, as well as any Discord server.  
+  
+Made by [Paul Bayfield](https://github.com/PaulBayfield)  
 
 # 📝 • License
 
 ```
-Copyright 2025 Scalar, Paul Bayfield
+Copyright 2025 Scalar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
