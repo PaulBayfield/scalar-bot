@@ -6,7 +6,7 @@ from discord.ext import commands
 
 class Commands(commands.Cog):
     """
-    Commandes du bot.
+    Bot commands for the Scalar bot.
     """
     def __init__(self, client: commands.Bot):
         self.client = client
@@ -49,11 +49,17 @@ class Commands(commands.Cog):
             label="Github",
             url="https://github.com/scalar/scalar",
         )
+        discord = discord.ui.Button(
+            style=discord.ButtonStyle.link,
+            label="Discord",
+            url=self.client.config.discord_invite,
+        )
 
         view = discord.ui.View()
         view.add_item(website)
         view.add_item(docs)
         view.add_item(github)
+        view.add_item(discord)
 
         await interaction.response.send_message(
             embed=embed,

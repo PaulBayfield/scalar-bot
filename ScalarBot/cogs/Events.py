@@ -11,7 +11,7 @@ class Events(commands.Cog):
     def __init__(self, client: discord.Client):
         self.client = client
 
- 
+
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
         if message.author.bot or message.guild is None or message.author.id == self.client.user.id or message.content == "":
