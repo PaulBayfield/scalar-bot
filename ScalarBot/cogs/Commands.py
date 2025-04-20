@@ -34,32 +34,32 @@ class Commands(commands.Cog):
             icon_url=self.client.user.avatar.url,
         )
 
-        website = discord.ui.Button(
+        button_website = discord.ui.Button(
             style=discord.ButtonStyle.link,
             label="Website",
             url="https://scalar.com",
         )
-        docs = discord.ui.Button(
+        button_docs = discord.ui.Button(
             style=discord.ButtonStyle.link,
             label="Documentation",
             url="https://guides.scalar.com",
         )
-        github = discord.ui.Button(
+        button_github = discord.ui.Button(
             style=discord.ButtonStyle.link,
             label="Github",
             url="https://github.com/scalar/scalar",
         )
-        discord = discord.ui.Button(
+        button_discord = discord.ui.Button(
             style=discord.ButtonStyle.link,
             label="Discord",
             url=self.client.config.discord_invite,
         )
 
         view = discord.ui.View()
-        view.add_item(website)
-        view.add_item(docs)
-        view.add_item(github)
-        view.add_item(discord)
+        view.add_item(button_website)
+        view.add_item(button_docs)
+        view.add_item(button_github)
+        view.add_item(button_discord)
 
         await interaction.response.send_message(
             embed=embed,
