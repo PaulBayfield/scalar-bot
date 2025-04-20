@@ -1,11 +1,10 @@
-FROM python:3.12.7-alpine3.20
-
-RUN apk add --no-cache git
+FROM python:3.12.10-alpine
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY . ./ScalarBot
 
 WORKDIR /ScalarBot
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN uv sync --frozen
 
-CMD ["python", "__main__.py"]
+CMD ["uv", "run", "__main__.py"]

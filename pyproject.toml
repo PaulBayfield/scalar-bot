@@ -1,0 +1,11 @@
+[project]
+name = "scalar-bot"
+version = "1.0.0"
+description = "Our Discord bot for https://discord.gg/scalar"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.11.17",
+    "discord-py>=2.5.2",
+    "python-dotenv>=1.1.0",
+]
